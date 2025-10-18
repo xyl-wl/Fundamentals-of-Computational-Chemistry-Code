@@ -16,7 +16,8 @@ print(f"学位:{degree}")
 # (1)布尔值
 print("\n=== 布尔值 - True/False ===") #\n是换行符
 # 空字符串、0、None等会转为False，其他转为True
-print(bool(""))      # 空字符串，结果为False
+print(bool(""),bool(()),bool({}),bool([])) 
+# 空序列，比如空字符串、空元组、空字典、空列表，结果为False
 print(bool(None))    # None，结果为False
 print(bool("None"))  # 注意：这里的"None"是字符串，所以是True
 print(bool("Hello")) # 非空字符串，结果为True
